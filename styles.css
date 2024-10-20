@@ -1,0 +1,18 @@
+html{
+    
+}
+
+
+h1{
+    color:rgb(110, 13, 208);
+
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+.title {
+    font-size: 50px;
+}
+.page-title {
+    font-size: 20px;
+}
