@@ -44,7 +44,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/Nirvana.jpg" alt="nirvana" class="event-card__img" />
+                <img src="assets/images/events/Nirvana.png" alt="nirvana" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Собираемся и слушаем альбом Nirvana
@@ -59,7 +59,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/HowStuffWorks.jpg" alt="HowStuffWorks" class="event-card__img" />
+                <img src="assets/images/events/HowStuffWorks.png" alt="HowStuffWorks" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Есть тема, нужно обсудить с HowStuffWorks
@@ -74,7 +74,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/Sade.jpg" alt="Sade" class="event-card__img" />
+                <img src="assets/images/events/Sade.png" alt="Sade" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Вечер | The Best of Sade
@@ -89,7 +89,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/выставка Малевича.jpg" alt="Sade" class="event-card__img" />
+                <img src="assets/images/events/Malevich.png" alt="Sade" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Выставка Малевича в Томске
@@ -104,7 +104,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/арт-съемка для Tatler.jpg" alt="Sade" class="event-card__img" />
+                <img src="assets/images/events/Tatler.png" alt="Sade" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Мастер — класс по студийной съемке от Tatler
@@ -119,7 +119,7 @@
             <!-- Карточка товара -->
             <a href="#" class="event-card__link">
               <picture class="event-card__picture">
-                <img src="assets/images/events/the hatters.jpg" alt="Sade" class="event-card__img" />
+                <img src="assets/images/events/TheHatters.png" alt="Sade" class="event-card__img" />
               </picture>
               <h4 class="event-card__title">
                 Повесилимся на славу на концерте The Hatters
@@ -136,6 +136,132 @@
       <!-- Здесь будут дополнительные услуги -->
     </div>
   </main>
+
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+        <form class="pp__form form">
+          <!-- Содержимое формы -->
+          <div class="form__list">
+            <div class="field form__field form__field--width50">
+              <h6 class="field__title">Формат мероприятия:</h6>
+
+              <div class="field__radio radio">
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="seminar" checked />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Мастер-класс/семинар</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="concert" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Концерт/выступление</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="show" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Выставка/показ</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="other" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Другое</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form__group form__group--width50">
+              <div class="form__field field">
+                <h6 class="field__title">Планируемое количество посетителей:</h6>
+
+                <select class="field__select" placeholder="Выберите планируемое число посетителей" name="amount">
+                  <option value="20">до 20 человек</option>
+                  <option value="100">от 20 до 100 человек</option>
+                  <option value="500">от 100 до 500 человек</option>
+                  <option value="1000">более 500 человек</option>
+                </select>
+              </div>
+
+              <div class="form__field field">
+                <h6 class="field__title">Дата проведения:</h6>
+
+                <div class="field__date-inputs">
+                  <input class="field__date-input" type="text" placeholder="Д" />
+                  <input class="field__date-input" type="text" placeholder="М" />
+                  <input class="field__date-input field__date-input--year" type="text" placeholder="Г" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <h6 class="form__section-title">Контакные данные:</h6>
+
+            <div class="form__list">
+              <label class="field form__field form__field--width50">
+                <span class="field__label">Имя*</span>
+                <input class="field__input" type="text" placeholder="Имя" name="name" required />
+              </label>
+
+              <label class="field form__field form__field--width50">
+                <span class="field__label">Фамилия*</span>
+                <input class="field__input" type="text" placeholder="Фамилия" name="last_name" required />
+              </label>
+
+              <label class="field form__field form__field--width50">
+                <span class="field__label">Телефон*</span>
+                <input class="field__input" type="tel" placeholder="+7 (___) ___ __ __" name="phone" required />
+              </label>
+
+              <label class="field form__field form__field--width50">
+                <span class="field__label">Email*</span>
+                <input class="field__input" type="email" placeholder="Email" name="email" required />
+              </label>
+            </div>
+          </div>
+
+          <label class="field form__field">
+            <span class="field__title">Есть пожелания? Напишите&nbsp;нам:</span>
+            <textarea class="field__textarea" type="text" name="Пожелания"></textarea>
+          </label>
+
+          <div class="form__check-list">
+            <label class="form__check check">
+              <input type="checkbox" name="agree" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                Я соглашаюсь с пользовательским соглашением и с политикой
+                использования персональных данных
+              </span>
+            </label>
+          </div>
+
+          <div class="form__btns">
+            <button type="submit" class="form__btn btn">
+              Отправить
+            </button>
+
+            <button type="button" class="form__btn-close">
+              Закрыть
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
